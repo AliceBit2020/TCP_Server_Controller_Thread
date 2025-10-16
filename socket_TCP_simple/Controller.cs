@@ -55,7 +55,7 @@ namespace socket_TCP_simple
                         break;
 
 
-                    string unsw = "I am server"+ data;
+                    string unsw = "I am server. I receive from client: "+ data;
                     byte[] unswB = Encoding.Default.GetBytes(unsw);
                     handler.Send(unswB);
                 }
